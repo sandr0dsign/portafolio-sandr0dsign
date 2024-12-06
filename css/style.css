@@ -1,0 +1,1453 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+:root {
+    /* Background Color */
+    --bg-color: #0D0D0D;
+
+    /* Primary Colors */
+    --white: #FFFFFF;
+    --aqua: #83ECD3;
+    --yellow: #FFFF00;
+    --magenta: #FF68FF;
+    --aqua-hover: #1DBE99;
+    
+    /* Color Icons */
+    --gray-icons: #3C3A38;
+    
+    /* Color Paragraph Quotes - Background */
+    --dark-gray-paragraph: #191818;
+}
+
+body {
+    margin: 0;
+    line-height: normal;
+    background-color: var(--bg-color);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header */
+.header {
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 32px 70px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 18px;
+    color: var(--white);
+    font-family: 'AeonikPro-Bold';
+}
+
+.header-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: stretch;
+    align-items: center;
+    gap: 266px;
+}
+
+.items-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 67px;
+}
+
+.items-logo-icon {
+    width: 250.5px;
+    position: relative;
+    height: 30.4px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.design-dept {
+    position: relative;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.text-design-dept {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.header-button {
+    display: flex;
+    flex-direction: row;
+    width: 128px;
+    border-radius: 999px;
+    background-color: var(--aqua);
+    height: 61px;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 27px;
+    box-sizing: border-box;
+    color: var(--bg-color);
+    font-family: 'ProximaNova-Bold';
+    text-decoration: none;
+}
+
+.button-text {
+    position: relative;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+}
+
+.header-button:hover {
+    background-color: var(--aqua-hover);
+}
+
+/* Hero Section */
+.section-hero {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 70px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 36px;
+    color: var(--white);
+    font-family: 'ProximaNova-Bold';
+}
+
+.hero-elements {
+    display: flex;
+    flex-direction: column;
+    width: 1140px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 70px;
+}
+
+.image-hero {
+    width: 100%;
+    position: relative;
+    height: 686px;
+}
+
+.gradient {
+    width: 100%;
+    position: absolute;
+    filter: blur(90px);
+    border-radius: 899.1px;
+    background: linear-gradient(270deg, #1e0036, #490e25);
+    height: 637.2px;
+    z-index: 0;
+}
+
+.hero-frame {
+    width: 100%;
+    position: relative;
+    height: 691px;
+    overflow: hidden;
+}
+
+.frame-macbook-icon {
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 0.2px);
+    top: 0px;
+    right: 0.2px;
+    bottom: 0px;
+    left: 0px;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.frame-pic-icon {
+    position: absolute;
+    height: 85.71%;
+    width: 79.93%;
+    top: 3.35%;
+    right: 9.99%;
+    bottom: 10.93%;
+    left: 10.08%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.items-hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.text {
+    position: relative;
+}
+
+.text-designer {
+    color: var(--aqua);
+}
+
+.hero-arrow-icon {
+    width: 59.3px;
+    height: 54px;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+.hero-button {
+    width: 208px;
+    border-radius: 999px;
+    background-color: var(--aqua);
+    height: 85px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 27px;
+    box-sizing: border-box;
+    font-size: 22px;
+    color: var(--bg-color);
+}
+
+.button-text-hero {
+    position: relative;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hero-button:hover {
+    background-color: var(--aqua-hover);
+}
+
+/* Research Section */
+.section-research {
+    display: flex;
+    padding: 27px 132px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.research-elements {
+    display: flex;
+    width: 1139px;
+    padding: 0px 27px;
+    flex-direction: column;
+    align-items: center;
+    gap: 66px;
+}
+
+.elements-title {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.title-text-research {
+    color: var(--White-white-500, #FFF);
+    text-align: center;
+    font-family: "AeonikPro-Black";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.research {
+    color: var(--Aqua-aqua-500, #83ECD3);
+    font-family: "AeonikPro-Black";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.research-one {
+    display: flex;
+    align-items: center;
+    gap: 97px;
+    align-self: stretch;
+}
+
+.image-research1-icon {
+    width: 435px;
+    height: auto;
+}
+
+.one-text {
+    display: flex;
+    width: 555px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.text-title {
+    color: var(--Aqua-aqua-500, #83ECD3);
+    text-align: center;
+    align-self: stretch;
+    /* Headings - Proxima Nova/H-3 Proxima Nova Black 56px */
+    font-family: "ProximaNova-Black";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.text-paragraph {
+    color: var(--White-white-500, #FFF);
+    text-align: center;
+    width: 441px;
+    height: 76px;
+    /* Body - Proxima Nova/B-7 Proxima Nova Regular 18px */
+    font-family: "ProximaNova-Regular";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 144.444% */
+}
+
+.research-two {
+    display: flex;
+    align-items: center;
+    gap: 145px;
+}
+
+.two-text {
+    display: flex;
+    width: 441px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.text-title1 {
+    color: var(--Aqua-aqua-500, #83ECD3);
+    text-align: center;
+    /* Headings - Proxima Nova/H-3 Proxima Nova Black 56px */
+    font-family: "ProximaNova-Black";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.text-paragraph1 {
+    color: var(--White-white-500, #FFF);
+    text-align: center;
+    height: 76px;
+    align-self: stretch;
+    /* Body - Proxima Nova/B-7 Proxima Nova Regular 18px */
+    font-family: "ProximaNova-Regular";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 144.444% */
+}
+
+.image-research2-icon {
+    width: 500px;
+    height: auto;
+}
+
+/* Tape */
+.tape-png {
+    position: relative;
+    width: 1425px;
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+.layer-tape {
+    width: 1425px; 
+    height: 244px; 
+    position: relative;
+}
+
+.tape-behind-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1425px; 
+    height: auto; 
+    object-fit: contain;
+    opacity: 0.5;
+}
+
+.tape-front-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1425px;
+    height: auto; 
+    object-fit: contain;
+}
+
+/* Design Dept Section */
+.section-design {
+    display: flex;
+    margin-top: 100px;
+    margin-left: 61.5px;
+    width: 1280px;
+    height: 494px;
+    padding: 31px 70px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.design-elements {
+    display: flex;
+    flex-direction: row;
+    width: 1170px;
+    height: 445px;
+    position: relative;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 70px 12px;
+    box-sizing: border-box;
+    gap: 79px;
+}
+
+.items-section {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 35px;
+}
+
+.section-title {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 100px;
+}
+
+.title-text-dept {
+    position: relative;
+    width: 264px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 55px;
+    color: #ffff00;
+    font-family: 'Proxima Nova';
+}
+
+text {
+    color: var(--Yellow-yellow-500, #FF0);
+    font-family: "ProximaNova-Black";
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.design {
+    margin: 0;
+}
+
+.span {
+    color: #ff68ff;
+}
+
+.dept {
+    font-family: "ProximaNova-Black";
+    font-size: 80px; 
+    font-style: normal;
+    font-weight: 900; 
+    color: transparent;
+    line-height: normal;
+    letter-spacing: 2px; 
+    -webkit-text-stroke: 1.5px yellow; 
+}
+
+.title-arrow-icon {
+    position: relative;
+    width: 174px;
+    height: 188px;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+.section-paragraph {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 28px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    font-family: 'Proxima Nova';
+}
+
+.paragraph-primary {
+    width: 100%;
+    position: relative;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 600;
+    font-family: 'Proxima Nova';
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    height: 130px;
+}
+
+.paragraph-secondary {
+    width: 100%;
+    position: relative;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: 'Proxima Nova';
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    height: 52px;
+}
+
+.image-design-dept {
+    width: 593.436px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.gradient-design-dept {
+    position: absolute; 
+    top: 50%;
+    left: 75.53%;
+    transform: translate(-50%, -50%); 
+    width: 541.94px;
+    height: 320px;
+    flex-shrink: 0;
+    border-radius: 809.19px;
+    background: var(--purple-color-bg, #1E0036);
+    filter: blur(40.5px);
+    z-index: 0; 
+}
+
+.frame-mac-design-icon {
+    position: absolute; 
+    top: 50%;
+    left: 75.53%;
+    transform: translate(-50%, -50%); 
+    width: 537px;
+    height: auto;
+    flex-shrink: 0;
+    z-index: 1; 
+}
+
+.frame-pic-design-icon {
+    position: absolute; 
+    top: 47%;
+    left: 75.53%;
+    transform: translate(-50%, -50%); 
+    width: 420px;
+    height: auto;
+    flex-shrink: 0;
+    z-index: 2;
+}
+
+/* Shots Section */
+.section-shots {
+    margin-top: 50px;
+    margin-left: 91.1px;
+    display: flex;
+    width: 1220.5px;
+    height: 796px;
+    padding: 50px 70px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.shots-elements {
+    width: 1081px;
+    height: 647px;
+    display: flex;
+    padding: 0px 29px;
+    flex-direction: column;
+    align-items: center;
+    gap: 60.031px;
+}
+
+.items-text-shots {
+    display: flex;
+    align-items: center;
+    gap: 74px;
+}
+
+.text-arrow-left {
+    width: 144px;
+    height: 144px;
+}
+
+.text-section {
+    color: #FF0;
+    font-family: "Proxima Nova";
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 1.92px;
+}
+
+.text-arrow-right {
+    width: 144px;
+    height: 144px;
+}
+
+.items-section-shots {
+    display: flex;
+    align-items: center;
+    gap: 86.044px;
+    align-self: stretch;
+}
+
+.image-shot-phones {
+    width: 553.545px;
+    height: 442.895px;
+}
+
+.image-phones-content {
+    margin-top: 42px;
+    width: 521px;
+    height: auto;
+}
+
+.section-paragraph-shots {
+    display: flex;
+    width: 441.227px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28.014px;
+}
+
+.paragraph-title-shots {
+    height: 156.08px;
+    align-self: stretch;
+    color: var(--White-white-500, #FFF);
+    text-align: center;
+    font-family: "Proxima Nova";
+    font-size: 24.012px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26.013px; /* 108.333% */
+}
+
+.parapraph-text-shots {
+    height: 182.094px;
+    align-self: stretch;
+    color: var(--White-white-500, #FFF);
+    text-align: center;
+    font-family: "Proxima Nova";
+    font-size: 16.008px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26.013px; /* 162.5% */
+}
+
+/* Inspiration Section */
+.section-inspiration {
+    margin-left: 61.5px;
+    display: flex;
+    width: 1280px;
+    padding: 45px 70px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.inspiration-elements {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+    align-self: stretch;
+}
+
+.items-text-inspiration {
+    display: flex;
+    width: 421px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.text-where {
+    align-self: stretch;
+    color: var(--White-white-500, #FFF);
+    /* Headings - Proxima Nova/H-2 Proxima Nova ExtraBold 64px */
+    font-family: "Proxima Nova";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.text-i {
+    align-self: stretch;
+    color: var(--White-white-500, #FFF);
+    /* Headings - Proxima Nova/H-2 Proxima Nova ExtraBold 64px */
+    font-family: "Proxima Nova";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.text-get {
+    align-self: stretch;
+    color: var(--White-white-500, #FFF);
+    /* Headings - Proxima Nova/H-2 Proxima Nova ExtraBold 64px */
+    font-family: "Proxima Nova";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.text-my {
+    align-self: stretch;
+    color: var(--White-white-500, #FFF);
+    /* Headings - Proxima Nova/H-2 Proxima Nova ExtraBold 64px */
+    font-family: "Proxima Nova";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.text-inspiration {
+    align-self: stretch;
+    color: var(--Yellow-yellow-500, #FF0);
+    /* Headings - Proxima Nova/H-2 Proxima Nova ExtraBold 64px */
+    font-family: "Proxima Nova";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.text-from {
+    align-self: stretch;
+    color: var(--White-white-500, #FFF);
+    /* Headings - Proxima Nova/H-2 Proxima Nova ExtraBold 64px */
+    font-family: "Proxima Nova";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.line-svg {
+    width: 1.5px;
+    height: 399px;
+    background: var(--White-white-500, #FFF);
+}
+
+.items-section-inspiration {
+    display: flex;
+    width: 608px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 26px;
+}
+
+.section-behance {
+    display: flex;
+    align-items: center;
+    gap: 58px;
+    align-self: stretch;
+}
+
+.behance-text {
+    display: flex;
+    width: 454px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 23px;
+}
+
+.text-title-behance {
+    align-self: stretch;
+    color: var(--White-white-500, #FFF);
+    text-align: right;
+    /* Headings - Proxima Nova/H-9 Proxima Nova Bold 32px */
+    font-family: "Proxima Nova";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: 10%; /* 3.2px */
+    text-underline-offset: 25%; /* 8px */
+    text-underline-position: from-font;
+}
+
+.text-paragraph-behance {
+    height: 50px;
+    align-self: stretch;
+    color: var(--White-white-500, #FFF);
+    text-align: right;
+    /* Body - Proxima Nova/B-9 Proxima Nova Regular 16px */
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+}
+
+.behance-logo-icon {
+    width: 96px;
+    height: 96px;
+}
+
+.section-dribbble {
+    display: flex;
+    align-items: center;
+    gap: 58px;
+    align-self: stretch;
+}
+
+.dribbble-text {
+    display: flex;
+    width: 454px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 23px;
+}
+
+.text-title-dribbble {
+    align-self: stretch;
+    color: var(--White-white-500, #FFF);
+    text-align: right;
+    /* Headings - Proxima Nova/H-9 Proxima Nova Bold 32px */
+    font-family: "Proxima Nova";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: 10%; /* 3.2px */
+    text-underline-offset: 25%; /* 8px */
+    text-underline-position: from-font;
+}
+
+.text-paragraph-dribbble {
+    height: 69px;
+    align-self: stretch;
+    color: var(--White-white-500, #FFF);
+    text-align: right;
+    /* Body - Proxima Nova/B-9 Proxima Nova Regular 16px */
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+}
+
+.dribbble-logo-icon {
+    width: 96px;
+    height: 96px;
+}
+
+.section-framer {
+    display: flex;
+    align-items: center;
+    gap: 58px;
+    align-self: stretch;
+}
+
+.framer-text {
+    display: flex;
+    width: 454px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 23px;
+}
+
+.text-title-framer {
+    align-self: stretch;
+    color: var(--White-white-500, #FFF);
+    text-align: right;
+    /* Headings - Proxima Nova/H-9 Proxima Nova Bold 32px */
+    font-family: "Proxima Nova";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: 10%; /* 3.2px */
+    text-underline-offset: 25%; /* 8px */
+    text-underline-position: from-font;
+}
+
+.text-paragraph-framer {
+    height: 75px;
+    align-self: stretch;
+    color: var(--White-white-500, #FFF);
+    text-align: right;
+    /* Body - Proxima Nova/B-9 Proxima Nova Regular 16px */
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+}
+
+.framer-logo-icon {
+    width: 96px;
+    height: 96px;
+}
+
+/* Quotes Section */
+.section-quotes {
+    margin-left: 55px;
+    width: 1280px;
+    display: flex;
+    padding: 0px 70px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.quotes-elements {
+    display: flex;
+    width: 1140px;
+    height: 873px;
+    padding: 73px 46px 0px 46px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.items-steve {
+    display: flex;
+    align-items: center;
+    gap: 84px;
+    align-self: stretch;
+}
+
+.text-paragraph-quote-steve {
+    width: 674px;
+    height: 167px;
+    color: var(--White-white-500, #FFF);
+    text-align: center;
+    /* Headings - Proxima Nova/H-10 Proxima Nova Light 32px */
+    font-family: "Proxima Nova";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 42px; /* 131.25% */
+}
+
+.pfp-steve {
+    display: flex;
+    width: 290.4px;
+    flex-direction: column;
+    align-items: center;
+    gap: 19px;
+}
+
+.steve-image {
+    width: 290.4px;
+    height: 290.4px;
+}
+
+.steve-image-png {
+    width: 290.4px;
+    height: 290.4px;
+    flex-shrink: 0;
+}
+
+.steve-text {
+    display: flex;
+    width: 249px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-name-steve {
+    color: var(--Magenta-magenta-500, #FF68FF);
+    text-align: center;
+    /* Body - Proxima Nova/B-4 Proxima Nova Bold 20px */
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; /* 130% */
+    letter-spacing: 0.4px;
+}
+
+.text-occupation-steve {
+    color: var(--Magenta-magenta-500, #FF68FF);
+    text-align: center;
+    /* Body - Proxima Nova/B-6 Proxima Nova Light Italic 20px */
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 26px; /* 130% */
+    letter-spacing: 0.4px;
+}
+
+.text-year-steve {
+    color: var(--Magenta-magenta-500, #FF68FF);
+    text-align: center;
+    /* Body - Proxima Nova/B-5 Proxima Nova Light 20px */
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px; /* 130% */
+    letter-spacing: 0.4px;
+}
+
+.items-paula {
+    display: flex;
+    height: 362px;
+    align-items: center;
+    gap: 84px;
+    flex-shrink: 0;
+    align-self: stretch;
+}
+
+.pfp-paula {
+    display: flex;
+    width: 290.4px;
+    flex-direction: column;
+    align-items: center;
+    gap: 19px;
+}
+
+.paula-image {
+    width: 290.4px;
+    height: 290.4px;
+}
+
+.paula-image-png {
+    width: 290.4px;
+    height: 290.4px;
+    flex-shrink: 0;
+}
+
+.paula-text {
+    display: flex;
+    width: 266px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-name-paula {
+    align-self: stretch;
+    color: var(--Magenta-magenta-500, #FF68FF);
+    text-align: center;
+    /* Body - Proxima Nova/B-4 Proxima Nova Bold 20px */
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; /* 130% */
+    letter-spacing: 0.4px;
+}
+
+.text-occupation-paula {
+    align-self: stretch;
+    color: var(--Magenta-magenta-500, #FF68FF);
+    text-align: center;
+    /* Body - Proxima Nova/B-6 Proxima Nova Light Italic 20px */
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 26px; /* 130% */
+    letter-spacing: 0.4px;
+}
+
+.text-paragraph-quote-paula {
+    width: 674px;
+    height: 126px;
+    color: var(--White-white-500, #FFF);
+    text-align: center;
+    /* Headings - Proxima Nova/H-10 Proxima Nova Light 32px */
+    font-family: "Proxima Nova";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 42px; /* 131.25% */
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    padding: 125px 70px 96px 70px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.footer-items {
+    display: flex;
+    padding: 10px 63px;
+    align-items: flex-start;
+    gap: 320px;
+    align-self: stretch;
+}
+
+.items-menu {
+    display: flex;
+    width: 168px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 41px;
+}
+
+.menu-title {
+    align-self: stretch;
+    color: var(--Magenta-magenta-500, #FF68FF);
+    /* Headings - Aeonik Pro/H-3 Aeonik Pro Bold (Underline) 28px */
+    font-family: "Aeonik Pro";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.56px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: 25%; /* 7px */
+    text-underline-position: from-font;
+    text-transform: capitalize;
+}
+
+.menu-label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.label-research {
+    align-self: stretch;
+    color: var(--White-white-500, #FFF);
+    /* Headings - Aeonik Pro/H-4 Aeonik Pro Bold 28px */
+    font-family: "Aeonik Pro";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px; /* 150% */
+    letter-spacing: 0.56px;
+}
+
+.label-design {
+    align-self: stretch;
+    color: var(--White-white-500, #FFF);
+    /* Headings - Aeonik Pro/H-4 Aeonik Pro Bold 28px */
+    font-family: "Aeonik Pro";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px; /* 150% */
+    letter-spacing: 0.56px;
+}
+
+.label-shots {
+    align-self: stretch;
+    color: var(--White-white-500, #FFF);
+    /* Headings - Aeonik Pro/H-4 Aeonik Pro Bold 28px */
+    font-family: "Aeonik Pro";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px; /* 150% */
+    letter-spacing: 0.56px;
+}
+
+.label-inspiration {
+    align-self: stretch;
+    color: var(--White-white-500, #FFF);
+    /* Headings - Aeonik Pro/H-4 Aeonik Pro Bold 28px */
+    font-family: "Aeonik Pro";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px; /* 150% */
+    letter-spacing: 0.56px;
+}
+
+.label-quotes {
+    align-self: stretch;
+    color: var(--White-white-500, #FFF);
+    /* Headings - Aeonik Pro/H-4 Aeonik Pro Bold 28px */
+    font-family: "Aeonik Pro";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px; /* 150% */
+    letter-spacing: 0.56px;
+}
+
+.label-social {
+    align-self: stretch;
+    color: var(--White-white-500, #FFF);
+    /* Headings - Aeonik Pro/H-4 Aeonik Pro Bold 28px */
+    font-family: "Aeonik Pro";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px; /* 150% */
+    letter-spacing: 0.56px;
+}
+
+.items-social {
+    display: flex;
+    width: 166px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 41px;
+}
+
+.social-title {
+    align-self: stretch;
+    color: var(--Magenta-magenta-500, #FF68FF);
+    /* Headings - Aeonik Pro/H-3 Aeonik Pro Bold (Underline) 28px */
+    font-family: "Aeonik Pro";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.56px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: 25%; /* 7px */
+    text-underline-position: from-font;
+    text-transform: capitalize;
+}
+
+.social-label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.label-instagram {
+    align-self: stretch;
+    color: var(--White-white-500, #FFF);
+    /* Headings - Aeonik Pro/H-4 Aeonik Pro Bold 28px */
+    font-family: "Aeonik Pro";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px; /* 150% */
+    letter-spacing: 0.56px;
+}
+
+.label-facebook {
+    align-self: stretch;
+    color: var(--White-white-500, #FFF);
+    /* Headings - Aeonik Pro/H-4 Aeonik Pro Bold 28px */
+    font-family: "Aeonik Pro";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px; /* 150% */
+    letter-spacing: 0.56px;
+}
+
+.label-x {
+    align-self: stretch;
+    color: var(--White-white-500, #FFF);
+    /* Headings - Aeonik Pro/H-4 Aeonik Pro Bold 28px */
+    font-family: "Aeonik Pro";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px; /* 150% */
+    letter-spacing: 0.56px;
+}
+
+.label-linkedin {
+    align-self: stretch;
+    color: var(--White-white-500, #FFF);
+    /* Headings - Aeonik Pro/H-4 Aeonik Pro Bold 28px */
+    font-family: "Aeonik Pro";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px; /* 150% */
+    letter-spacing: 0.56px;
+}
+
+.label-behance {    
+    align-self: stretch;
+    color: var(--White-white-500, #FFF);
+    /* Headings - Aeonik Pro/H-4 Aeonik Pro Bold 28px */
+    font-family: "Aeonik Pro";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px; /* 150% */
+    letter-spacing: 0.56px;
+}
+
+.label-dribbble {    
+    align-self: stretch;
+    color: var(--White-white-500, #FFF);
+    /* Headings - Aeonik Pro/H-4 Aeonik Pro Bold 28px */
+    font-family: "Aeonik Pro";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px; /* 150% */
+    letter-spacing: 0.56px;
+}
+
+.items-talk {
+    display: flex;
+    width: 238px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 41px;
+}
+
+.talk-title {
+    align-self: stretch;
+    color: var(--Magenta-magenta-500, #FF68FF);
+    /* Headings - Aeonik Pro/H-3 Aeonik Pro Bold (Underline) 28px */
+    font-family: "Aeonik Pro";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.56px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: 25%; /* 7px */
+    text-underline-position: from-font;
+    text-transform: capitalize;
+}
+
+.talk-label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.label-email {
+    align-self: stretch;
+    color: var(--White-white-500, #FFF);
+    /* Headings - Aeonik Pro/H-4 Aeonik Pro Bold 28px */
+    font-family: "Aeonik Pro";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px; /* 150% */
+    letter-spacing: 0.56px;
+}
+
+.label-number {
+    align-self: stretch;
+    color: var(--White-white-500, #FFF);
+    /* Headings - Aeonik Pro/H-4 Aeonik Pro Bold 28px */
+    font-family: "Aeonik Pro";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px; /* 150% */
+    letter-spacing: 0.56px;
+}
+
+.label-spark {
+    align-self: stretch;
+    color: var(--White-white-500, #FFF);
+    /* Headings - Aeonik Pro/H-4 Aeonik Pro Bold 28px */
+    font-family: "Aeonik Pro";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px; /* 150% */
+    letter-spacing: 0.56px;
+}
+
+.label-outlook {
+    align-self: stretch;
+    color: var(--White-white-500, #FFF);
+    /* Headings - Aeonik Pro/H-4 Aeonik Pro Bold 28px */
+    font-family: "Aeonik Pro";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px; /* 150% */
+    letter-spacing: 0.56px;
+}
